@@ -1,19 +1,24 @@
 Package: corrdiscdist
-Title: What the Package Does (One Line, Title Case)
+Title: Inference and simulation on correlated discrete distributions
 Version: 0.1.0-1
 Date: 2026-03-31
-Description: What the package does (one paragraph).
+Description: Implementation of simulation (wrapping around RcppDist) and inference (wrapping around mvtnorm) for selected correlated discrete distributions (negative binomial, binomial, ordinal multinomial). Provides interfaces for R, C++, JAGS and TMB (maybe).
 Authors@R:
   c(
-    person(given="Joe", family="Bloggs", email="joe@bloggs.com", role=c("aut", "cre"))
+    person(given="Matt", family="Denwood", email="md@sund.ku.dk", role=c("aut", "cre"))
   )    
-License: GPL (>= 3)
+License: GPL (>= 2)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 Depends:
   R (>= 4.1.0)
+LinkingTo:
+  Rcpp,
+  RcppDist,
+  mvtnorm
 Imports:
+  Rcpp,
   rlang,
   dplyr,
   tibble
@@ -23,6 +28,7 @@ Suggests:
   rmarkdown,
   spelling,
   testthat (>= 3.0.0)
+SystemRequirements: C++20
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 Language: en-GB

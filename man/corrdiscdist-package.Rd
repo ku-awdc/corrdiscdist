@@ -6,7 +6,7 @@
 \alias{corrdiscdist}
 \title{What the Package Does (One Line, Title Case)}
 \description{
-What the package does (one paragraph).
+Implementation of simulation (wrapping around RcppDist) and inference (wrapping around mvtnorm) for selected correlated discrete distributions (negative binomial, binomial, ordinal multinomial). Provides interfaces for R, C++, JAGS and TMB (maybe).
 }
 \details{
 Some description of the package
@@ -27,7 +27,7 @@ Some article that you might want users to look at
 \code{\link[neatpkg]{pkg_new}} for the function that created this package
 }
 \author{
-\strong{Maintainer}: Joe Bloggs \email{joe@bloggs.com}
+\strong{Maintainer}: Matt Denwood \email{md@sund.ku.dk}
 
 }
 \keyword{internal}
